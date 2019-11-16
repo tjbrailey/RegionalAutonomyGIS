@@ -10,6 +10,8 @@ library(ggplot2)
 epr <- rio::import(paste0(here::here(), "/data/EPR-2018.1.1.csv"))
 geo_epr <- rio::import(paste0(here::here(), "/data/GeoEPR-2018.1.1.csv"))
 mali_conflict <- rio::import(paste0(here::here(), "/data/1997-01-01-2003-12-31-Mali.csv"))
+geom <- sf::st_read(paste0(here::here(), "/data/GeoEPR-2018.1.1/GeoEPR.shp")) %>%
+  dplyr::select(group, geometry)
 
 # Subset data
 group_t <- epr %>%
@@ -50,7 +52,12 @@ epr_join_af <- epr_join %>%
   dplyr::group_by(statename, group) %>%
   tidyr::complete(group, from = min(from):2019) %>%
   tidyr::fill(gwid, groupid, gwgroupid, umbrella, size, status, reg_aut, sqkm, type, the_geom) %>%
-  dplyr::select(-to) %>%
+  dplyr::select(-to, -the_geom) %>%
   dplyr::rename(year = from)
+
+final <- sf::st_sf(dplyr::left_join(epr_join_af, geom))
+
+write.csv(final, paste0(here::here(), "/data/epr_af.csv"))
+sf::st_write(final, paste0(here::here(), "/data/epr_af.shp"))
 
 #rm(epr, epr_join, epr_sub, geo_epr, geo_epr_sub, group_aut, group_f, group_t, af_sub)
