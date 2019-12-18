@@ -23,8 +23,11 @@ write.csv(health, paste0(here::here(), "/data/health.csv"))
 arc_conf <- dplyr::as_data_frame(rio::import(paste0(here::here(), "/data/final_conflict.xlsx")))
 xtable::xtable(arc_conf)
 
+reg_out <- rio::import(paste0(here::here(), "/data/pppp.xls")) %>%
+  dplyr::mutate(log_pop = log(gridcode),
+                log_diff = log(diff + 1 - min(diff)))
 
-# Subset data
+# Subset data (Explore Variables)
 group_t <- epr %>%
   dplyr::filter(reg_aut == "TRUE") %>%
   dplyr::distinct(group) %>%
@@ -67,10 +70,17 @@ epr_join_af <- epr_join %>%
   dplyr::select(-to, -the_geom) %>%
   dplyr::rename(year = from)
 
+
+# Create final subsetted data for Mali
 final <- sf::st_sf(dplyr::left_join(epr_join_af, geom)) %>%
   dplyr::filter(statename %in% c("Mali"))
 
 write.csv(final, paste0(here::here(), "/data/epr_af.csv"))
 sf::st_write(final, paste0(here::here(), "/data/epr_af.shp"), delete_dsn = TRUE)
+
+# robust regression
+lm <- estimatr::lm_robust(diff ~ tuareg_r_1 + log_pop, data = reg_out)
+texreg::texreg(lm, include.ci = FALSE)
+
 
 #rm(epr, epr_join, epr_sub, geo_epr, geo_epr_sub, group_aut, group_f, group_t, af_sub)
