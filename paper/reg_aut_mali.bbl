@@ -1,0 +1,104 @@
+\begin{thebibliography}{10}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \def\href#1#2{#2} \def\path#1{#1}\fi
+
+\bibitem{linard_population_2012}
+C.~Linard, M.~Gilbert, R.~W. Snow, A.~M. Noor, A.~J. Tatem,
+  \href{http://dx.plos.org/10.1371/journal.pone.0031743}{Population
+  {Distribution}, {Settlement} {Patterns} and {Accessibility} across {Africa}
+  in 2010}, PLoS ONE 7~(2) (2012) e31743.
+\newblock \href {https://doi.org/10.1371/journal.pone.0031743}
+  {\path{doi:10.1371/journal.pone.0031743}}.
+\newline\urlprefix\url{http://dx.plos.org/10.1371/journal.pone.0031743}
+
+\bibitem{noauthor_gadm_nodate}
+\href{https://gadm.org/}{{GADM}}.
+\newline\urlprefix\url{https://gadm.org/}
+
+\bibitem{hostettler_innovation_2018}
+S.~Hostettler, \href{http://link.springer.com/10.1007/978-3-319-91068-0_1}{From
+  {Innovation} to {Social} {Impact}}, in: S.~Hostettler, S.~Najih~Besson, J.-C.
+  Bolay (Eds.), Technologies for {Development}, Springer International
+  Publishing, Cham, 2018, pp. 3--10.
+\newblock \href {https://doi.org/10.1007/978-3-319-91068-0_1}
+  {\path{doi:10.1007/978-3-319-91068-0_1}}.
+\newline\urlprefix\url{http://link.springer.com/10.1007/978-3-319-91068-0_1}
+
+\bibitem{raleigh_introducing_2010}
+C.~Raleigh, A.~Linke, H.~Hegre, J.~Karlsen,
+  \href{http://journals.sagepub.com/doi/10.1177/0022343310378914}{Introducing
+  {ACLED}: {An} {Armed} {Conflict} {Location} and {Event} {Dataset}: {Special}
+  {Data} {Feature}}, Journal of Peace Research 47~(5) (2010) 651--660.
+\newblock \href {https://doi.org/10.1177/0022343310378914}
+  {\path{doi:10.1177/0022343310378914}}.
+\newline\urlprefix\url{http://journals.sagepub.com/doi/10.1177/0022343310378914}
+
+\bibitem{vogt_integrating_2015}
+M.~Vogt, N.-C. Bormann, S.~Rüegger, L.-E. Cederman, P.~Hunziker, L.~Girardin,
+  \href{http://journals.sagepub.com/doi/10.1177/0022002715591215}{Integrating
+  {Data} on {Ethnicity}, {Geography}, and {Conflict}: {The} {Ethnic} {Power}
+  {Relations} {Data} {Set} {Family}}, Journal of Conflict Resolution 59~(7)
+  (2015) 1327--1342.
+\newblock \href {https://doi.org/10.1177/0022002715591215}
+  {\path{doi:10.1177/0022002715591215}}.
+\newline\urlprefix\url{http://journals.sagepub.com/doi/10.1177/0022002715591215}
+
+\bibitem{keita_conflict_1998}
+K.~Keita,
+  \href{http://www.tandfonline.com/doi/abs/10.1080/09592319808423221}{Conflict
+  and conflict resolution in the {Sahel}: {The} {Tuareg} insurgency in {Mali}},
+  Small Wars \& Insurgencies 9~(3) (1998) 102--128.
+\newblock \href {https://doi.org/10.1080/09592319808423221}
+  {\path{doi:10.1080/09592319808423221}}.
+\newline\urlprefix\url{http://www.tandfonline.com/doi/abs/10.1080/09592319808423221}
+
+\bibitem{humphreys_natural_2005}
+M.~Humphreys,
+  \href{http://journals.sagepub.com/doi/10.1177/0022002705277545}{Natural
+  {Resources}, {Conflict}, and {Conflict} {Resolution}: {Uncovering} the
+  {Mechanisms}}, Journal of Conflict Resolution 49~(4) (2005) 508--537.
+\newblock \href {https://doi.org/10.1177/0022002705277545}
+  {\path{doi:10.1177/0022002705277545}}.
+\newline\urlprefix\url{http://journals.sagepub.com/doi/10.1177/0022002705277545}
+
+\bibitem{brown_federalism_2009}
+G.~K. Brown, \href{https://doi.org/10.1080/17449050902738887}{Federalism,
+  {Regional} {Autonomy} and {Conflict}: {Introduction} and {Overview}},
+  Ethnopolitics 8~(1) (2009) 1--4.
+\newblock \href {https://doi.org/10.1080/17449050902738887}
+  {\path{doi:10.1080/17449050902738887}}.
+\newline\urlprefix\url{https://doi.org/10.1080/17449050902738887}
+
+\bibitem{duncan_mixed_2007}
+C.~R. Duncan,
+  \href{https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1467-7660.2007.00430.x}{Mixed
+  {Outcomes}: {The} {Impact} of {Regional} {Autonomy} and {Decentralization} on
+  {Indigenous} {Ethnic} {Minorities} in {Indonesia}}, Development and Change
+  38~(4) (2007) 711--733.
+\newblock \href {https://doi.org/10.1111/j.1467-7660.2007.00430.x}
+  {\path{doi:10.1111/j.1467-7660.2007.00430.x}}.
+\newline\urlprefix\url{https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1467-7660.2007.00430.x}
+
+\bibitem{cederman_territorial_2015}
+L.-E. Cederman, S.~Hug, A.~Schädel, J.~Wucherpfennig,
+  \href{https://www.cambridge.org/core/journals/american-political-science-review/article/territorial-autonomy-in-the-shadow-of-conflict-too-little-too-late/9B8A3B5DC42371C27E26D389C42D0C92}{Territorial
+  {Autonomy} in the {Shadow} of {Conflict}: {Too} {Little}, {Too} {Late}?},
+  American Political Science Review 109~(2) (2015) 354--370.
+\newblock \href {https://doi.org/10.1017/S0003055415000118}
+  {\path{doi:10.1017/S0003055415000118}}.
+\newline\urlprefix\url{https://www.cambridge.org/core/journals/american-political-science-review/article/territorial-autonomy-in-the-shadow-of-conflict-too-little-too-late/9B8A3B5DC42371C27E26D389C42D0C92}
+
+\bibitem{mattes_fostering_2009}
+M.~Mattes, B.~Savun,
+  \href{https://academic.oup.com/isq/article-lookup/doi/10.1111/j.1468-2478.2009.00554.x}{Fostering
+  {Peace} {After} {Civil} {War}: {Commitment} {Problems} and {Agreement}
+  {Design}: \textit{{Fostering} {Peace} {After} {Civil} {War}}}, International
+  Studies Quarterly 53~(3) (2009) 737--759.
+\newblock \href {https://doi.org/10.1111/j.1468-2478.2009.00554.x}
+  {\path{doi:10.1111/j.1468-2478.2009.00554.x}}.
+\newline\urlprefix\url{https://academic.oup.com/isq/article-lookup/doi/10.1111/j.1468-2478.2009.00554.x}
+
+\end{thebibliography}
