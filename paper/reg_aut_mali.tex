@@ -18,16 +18,16 @@
 %% $Id: elsarticle-template-1-num.tex 149 2009-10-08 05:01:15Z rishi $
 %% $URL: http://lenova.river-valley.com/svn/elsbst/trunk/elsarticle-template-1-num.tex $
 %%
-\documentclass[12pt]{elsarticle}
+\documentclass[12pt]{article}
 
-\makeatletter
-\def\ps@pprintTitle{%
-   \let\@oddhead\@empty
-   \let\@evenhead\@empty
-   \let\@oddfoot\@oddfoot
-   \let\@evenfoot\@evenfoot
-}
-\makeatother
+%\makeatletter
+%\def\ps@pprintTitle{%
+%   \let\@oddhead\@empty
+%   \let\@evenhead\@empty
+%   \let\@oddfoot\@oddfoot
+%   \let\@evenfoot\@evenfoot
+%}
+%\makeatother
 
 %% Use the option review to obtain double line spacing
 %% \documentclass[preprint,review,12pt]{elsarticle}
@@ -51,6 +51,18 @@
 \usepackage{caption}
 \usepackage{subcaption}
 \usepackage{cite}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{physics}
+\usepackage{float}
+\usepackage[margin=1.in]{geometry}
+\usepackage{tocloft}
+\usepackage{inputenc}
+\usepackage{setspace}
+\usepackage{geometry}
+\usepackage{tabularx}
+
 
 %% The lineno packages adds line numbers. Start line numbering with
 %% \begin{linenumbers}, end it with \end{linenumbers}. Or switch it on
@@ -82,13 +94,19 @@
 
 \graphicspath{{./}{Documents}}
 
+\title{After Segmental Autonomy: Assessing Conflict and Service Proliferation in Mali's Autonomous Region}
+\author{Thomas J. Brailey}
+
 \begin{document}
 
-\begin{frontmatter}
+\maketitle
+
+\doublespacing
+
+%\begin{frontmatter}
 
 %% Title, authors and addresses
 
-\title{After Segmental Autonomy: Assessing Conflict and Service Proliferation in Mali's Autonomous Region}
 
 %% use the tnoteref command within \title for footnotes;
 %% use the tnotetext command for the associated footnote;
@@ -115,25 +133,25 @@
 %% \address[label1]{<address>}
 %% \address[label2]{<address>}
 
-\author{Thomas J. Brailey}
 
-\address{University of California, San Diego}
+
+%\address{University of California, San Diego}
 
 \begin{abstract}
 %% Text of abstract
 When ethnic groups are granted regional autonomy by the state’s national government, what do we expect to see? Existing literature posits that segmental autonomy, by allowing minority groups to act independently of the central government, can lead to a decrease in conflict in ethnically diverse societies. That said, this literature is highly contested and few quantitative studies exist to support these claims. Further, existing literature on segmental autonomy focuses almost exclusively on conflict, failing to address other possible outcomes of granting autonomy such as regional economic output, services, and development in the autonomous region. In 2000, the Mali government granted autonomy to the Tuareg minority population along the north-east border with Niger. Using conflict and health-services data three years prior to, and three years post, autonomy, this paper utilizes geographic information systems (GIS) in order to map conflict rates and health service proliferation in and around the Tuareg's autonomous region in Mali. 
 \end{abstract}
 
-\begin{keyword}
-Segmental Autonomy \sep Power-Sharing \sep GIS
+%\begin{keyword}
+%Segmental Autonomy \sep Power-Sharing \sep GIS
 %% keywords here, in the form: keyword \sep keyword
 
 %% MSC codes here, in the form: \MSC code \sep code
 %% or \MSC[2008] code \sep code (2000 is the default)
 
-\end{keyword}
+%\end{keyword}
 
-\end{frontmatter}
+%\end{frontmatter}
 
 %%
 %% Start line numbering here if you want
